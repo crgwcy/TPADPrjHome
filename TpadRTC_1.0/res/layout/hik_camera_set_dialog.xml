@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"  
+  		android:focusableInTouchMode="true"
+        >
+   
+    	<TextView 
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:text="Video Resolution:"/>
+        <RadioGroup 
+            android:id="@+id/hik_camera_resolution_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="hello"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <RadioButton 
+                android:id="@+id/resolution_320_240_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="hello"
+                android:text="320*240"
+                />
+            <RadioButton 
+                android:id="@+id/resolution_640_480_id"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="hello"
+                android:text="640*480"
+                android:checked="true"
+                />
+        </RadioGroup>
+		<TextView 
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:text="Video bitrate:"/>
+		<RadioGroup 
+            android:id="@+id/hik_camera_bitrate_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="hello"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <RadioButton 
+                android:id="@+id/bitrate_0_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="hello"
+                android:text="256Kbps"
+                />
+            <RadioButton 
+                android:id="@+id/bitrate_1_id"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="hello"
+                android:text="512Kbps"
+                android:checked="true"
+                />
+            <RadioButton 
+                android:id="@+id/bitrate_2_id"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="hello"
+                android:text="1024Kbps"
+                android:checked="true"
+                />
+        </RadioGroup>
+		
+</LinearLayout>

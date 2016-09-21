@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/ble_welcome_BG_STYLE"
+              android:orientation="vertical">
+ <TextView 
+     android:layout_width="wrap_content"
+     android:layout_height="fill_parent"
+     android:text="blue  tooth  open..."
+     android:textStyle="italic"
+     android:textSize="30sp"
+     android:layout_gravity="center"
+     android:gravity="center"/>            
+      
+
+</LinearLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <!-- login act --> 
+   <item type="id" name="login_name_id"></item>
+   <item type="id" name="login_password_id"></item>
+   <item type="id" name="login_radio_group_id"></item> 
+   <item type="id" name="login_radio_btn_pad_id"></item> 
+   <item type="id" name="login_radio_btn_mphone_id"></item> 
+   
+   
+   <!-- main act -->
+   <item type="id" name="main_menu_layout"></item>
+   <item type="id" name="main_menu_home_text_view"></item>
+   <item type="id" name="main_menu_home_status"></item>
+   <item type="id" name="time_textview_id"></item>  
+   <item type="id" name="menu_text_id"></item>
+   <item type="id" name="menu_list_view"></item>
+   <item type="id" name="loading_progress"></item>   
+   <item type="id" name="loading_progress_text_id"></item>    
+   <item type="id" name="loading_progress_image_bg_view_id"></item> 
+   
+   <item type="id" name="menu_list_item_layout"></item> 
+   <item type="id" name="menu_item_info_layout"></item> 
+   <item type="id" name="menu_list_item_title"></item> 
+   <item type="id" name="menu_list_item_title1"></item> 
+   <item type="id" name="menu_icon"></item> 
+   
+    
+   <!--community act -->
+   <item type="id" name="community_ret_id"></item> 
+   <item type="id" name="community_tittle_id"></item> 
+   <item type="id" name="community_gallery_id"></item> 
+   <item type="id" name="community_gallery_label_id"></item>
+    <item type="id" name="domsViewGroup_id"></item>
+              
+   <!-- call activity -->
+   <item type="id" name="glview_call"></item>
+   <item type="id" name="call_fragment_container"></item>
+   <item type="id" name="hud_fragment_container"></item>   
+   <item type="id" name="call_time_text_id"></item>   
+   
+   <!-- fragment call -->
+   <item type="id" name="button_call_disconnect"></item>  
+   <item type="id" name="button_call_switch_camera"></item>
+   <item type="id" name="button_call_scaling_mode"></item>
+
+   <!-- fragment call menu bar -->
+    <item type="id" name="button_disconnect"></item>  
+    <item type="id" name="button_switch_camera"></item>  
+    <item type="id" name="button_toggle_debug"></item>  
+    <item type="id" name="button_scaling_mode"></item>  
+     <item type="id" name="button_screen_mode_id"></item>  
+       <item type="id" name="button_speaker_id"></item>  
+     
+    
+    <item type="id" name="menubar_fragment"></item>  
+ 
+    <!-- ring activity -->
+    <item type="id" name="remote_name_tx_id"></item>
+    <item type="id" name="ring_answer_btn"></item>
+    <item type="id" name="ring_decline_btn"></item>
+    <item type="id" name="btns_view_container_id"></item>
+    <item type="id" name="ring_icon_id"></item>
+
+    <!-- call activity -->
+    <item type="id" name="cancel_btn_id"></item>
+     <item type="id" name="call_name_id"></item>
+     <item type="id" name="call_icon_id"></item>
+     
+    
+     <!--mphone light activity -->
+     
+    <item type="id" name="light_ret_id"></item>
+    <item type="id" name="light_name_label_id"></item>
+    <item type="id" name="light_home_btn_id"></item>
+    <item type="id" name="night_light_id"></item>
+    <item type="id" name="memory_id"></item>
+    <item type="id" name="spot_id"></item>
+    <item type="id" name="on_off_id"></item>
+    <item type="id" name="light_slide_weak_id"></item>
+    <item type="id" name="scene1_id"></item>
+    <item type="id" name="scene2_id"></item>
+    <item type="id" name="scene3_id"></item>
+    <item type="id" name="scene4_id"></item>
+             
+     
+     <!-- pad main activity -->
+    <item type="id" name="pad_main_menu_layout_id"></item>   
+    <item type="id" name="community_btn_id"></item>  
+    <item type="id" name="camera_btn_id"></item>  
+    <item type="id" name="pad_light_btn_id"></item>   
+     <item type="id" name="log_btn_id"></item>  
+    
+     <item type="id" name="date_text_id"></item>     
+     <item type="id" name="time_text_id"></item>  
+     <item type="id" name="home_stus_text_id"></item>  
+     <item type="id"  name="home_stus_view_bg_id"></item>
+    <item type="id"  name="home_image_id"></item>
+    
+      <!-- pad light activity -->
+    
+     <item type="id" name="pad_light_ret_btn_id"></item>   
+         
+     <!-- ip camera activity -->
+    <item type="id" name="ip_camera_ret_btn"></item>
+    <item type="id" name="ip_camera_tittle_id"></item>
+   <item type="id" name="ip_camera_send_btn_id"></item>
+   <item type="id" name="camera_surface_id"></item>
+   <item type="id" name="ip_camera_glview_id"></item>
+   <item type="id" name="ip_camera_menubar_fragment_id"></item>
+ 
+   
+     <!-- camera list activity -->
+    <item type="id" name="camera_list_ret_btn_id"></item>
+     <item type="id" name="camera_list_tittle_id"></item>
+   <item type="id" name="camera_list_gallery_id"></item>
+   <item type="id" name="camera_list_gallery_label_id"></item>
+   <item type="id" name="cameraListDomsViewGroup_id"></item>
+   
+      <!-- alarm activity -->
+    <item type="id" name="alarm_flashing_icon_id"></item>
+    <item type="id" name="alarm_ok_btn_id"></item>
+ 
+    <!-- hik camera activity -->
+    <item type="id" name="hik_camera_btns_container_id"></item>
+    <item type="id" name="hik_camera_hangup_btn_id"></item>
+    <item type="id" name="hik_camera_set_btn_id"></item> 
+    <item type="id" name="hik_camera_up_btn_id"></item> 
+    <item type="id" name="hik_camera_down_btn_id"></item> 
+    <item type="id" name="hik_camera_left_btn_id"></item> 
+    <item type="id" name="hik_camera_right_btn_id"></item> 
+ 	<item type="id" name="hik_camera_speaker_btn_id"></item>     
+</resources>

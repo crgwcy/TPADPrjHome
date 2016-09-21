@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                style="@style/ble_controller_BG_STYLE">
+
+    <jp.tpadsz.ihome.list.DragExpandableListView
+            android:id="@+id/list_preview_controller"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/layout_preview_func"
+            android:layout_marginTop="@dimen/ble_list_margin"
+            android:drawSelectorOnTop="false"
+            android:listSelector="@drawable/linear_list_selector"
+           />
+
+</RelativeLayout>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/timer_item_height"
+              android:descendantFocusability="blocksDescendants"
+              android:orientation="horizontal"
+              android:padding="10dp">
+
+    <!-- The id for left. -->
+
+    <TextView
+            android:id="@+id/txt_timer_schedule_id"
+            android:layout_width="@dimen/timer_item_indicate_width"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@drawable/ic_timer_font_color"
+            android:textSize="@dimen/timer_item_indicate_font_size"/>
+
+    <!-- The divider for id and content -->
+
+    <ImageView
+            android:id="@+id/img_timer_schedule_divider"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@color/timer_item_font_color_online"
+            android:paddingLeft="@dimen/timer_item_divider_padding_left"
+            android:paddingRight="@dimen/timer_item_divider_padding_right"/>
+
+    <!-- Content for setting. -->
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <!-- Setting [ Time & Switch ] -->
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:id="@+id/txt_timer_item_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="hello"
+                    android:textColor="@drawable/ic_timer_font_color"
+                    android:textSize="@dimen/timer_item_time_font_size"/>
+
+            <jp.tpadsz.ihome.singleradio.CustomCheckBox
+                    android:id="@+id/btn_timer_item_switch"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@android:color/transparent"
+                    android:button="@drawable/ic_timer_item_switch"/>
+        </LinearLayout>
+
+        <!-- Setting [ Runnable & Repeating & Interval ] -->
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+            <!-- Setting - Runnable [ Detial Scene & ALL ON/OFF ] -->
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4">
+
+                <ImageView
+                        android:id="@+id/img_timer_item_runnable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_timer_runnable_allon"/>
+
+                <LinearLayout
+                        android:id="@+id/layout_timer_time_runnable"
+                        android:layout_width="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                    <ImageView
+                            android:id="@+id/img_timer_item_runnable_scene"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_timer_scene"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="1"/>
+
+                    <!--<TextView-->
+                            <!--android:id="@+id/txt_timer_item_runnable_scene"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:layout_gravity="center_horizontal"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:textColor="@drawable/ic_timer_font_color"-->
+                            <!--android:textSize="@dimen/timer_item_scene_font_size"/>-->
+
+                    <ImageView
+                            android:id="@+id/txt_timer_item_runnable_scene"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="1"
+                            />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <!-- Setting - Repeating / Interval -->
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/timer_item_week_margin_left"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                <!-- Setting - Repeating -->
+
+                <ImageView
+                        android:id="@+id/img_timer_item_repeate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_timer_repeate"/>
+
+                <!-- Setting - Interval -->
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                    <!-- Monday Tuesday Wednesday Thursday Friday Saturday Sunday -->
+
+                    <TextView
+                            android:id="@+id/txt_timer_item_monday"
+                            style="@style/timer_item_week_FONT_SIZE"
+                            android:layout_weight="1"
+                            android:text="@string/jp_timer_item_repeate_monday"/>
+
+                    <TextView
+                            android:id="@+id/txt_timer_item_tuesday"
+                            style="@style/timer_item_week_FONT_SIZE"
+                            android:layout_weight="1"
+                            android:text="@string/jp_timer_item_repeate_tuesday"/>
+
+                    <TextView
+                            android:id="@+id/txt_timer_item_wednesday"
+                            style="@style/timer_item_week_FONT_SIZE"
+                            android:layout_weight="1"
+                            android:text="@string/jp_timer_item_repeate_wednesday"/>
+
+                    <TextView
+                            android:id="@+id/txt_timer_item_thursday"
+                            style="@style/timer_item_week_FONT_SIZE"
+                            android:layout_weight="1"
+                            android:text="@string/jp_timer_item_repeate_thursday"/>
+
+                    <TextView
+                            android:id="@+id/txt_timer_item_friday"
+                            style="@style/timer_item_week_FONT_SIZE"
+                            android:layout_weight="1"
+                            android:text="@string/jp_timer_item_repeate_friday"/>
+
+                    <TextView
+                            android:id="@+id/txt_timer_item_saturday"
+                            style="@style/timer_item_week_FONT_SIZE"
+                            android:layout_weight="1"
+                            android:text="@string/jp_timer_item_repeate_saturday"/>
+
+                    <TextView
+                            android:id="@+id/txt_timer_item_sunday"
+                            style="@style/timer_item_week_FONT_SIZE"
+                            android:layout_weight="1"
+                            android:text="@string/jp_timer_item_repeate_sunday"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:paddingRight="@dimen/item_preview_layout_padding_hor"
+              android:paddingLeft="@dimen/item_preview_layout_padding_hor"
+              android:paddingBottom="@dimen/item_preview_layout_padding_ver"
+              android:paddingTop="@dimen/item_preview_layout_padding_ver"
+              android:descendantFocusability="blocksDescendants"
+              android:orientation="horizontal"
+              android:layout_height="200dp"
+              android:id="@+id/test">
+
+    <ImageView
+            android:id="@+id/img_item_operation_indicate"
+            android:layout_width="@dimen/item_preview_indicate_width"
+            android:layout_height="match_parent"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:paddingBottom="@dimen/item_seek_layout_padding_ver"
+                android:paddingLeft="@dimen/item_seek_layout_padding_hor"
+                android:paddingRight="@dimen/item_seek_layout_padding_hor"
+                android:paddingTop="@dimen/item_seek_layout_padding_ver">
+
+            <ImageView
+                    android:id="@+id/img_item_connect_status"
+                    android:layout_width="25dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_connected_status_warning"/>
+
+            <TextView
+                    android:id="@+id/txt_item_operation_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@android:color/white"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:text="hello"
+                    android:textSize="@dimen/item_seek_layout_title_font_size"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+                android:id="@+id/layout_seek_bright"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/item_seek_layout_padding_ver"
+                android:paddingLeft="@dimen/item_seek_layout_padding_hor"
+                android:paddingRight="@dimen/item_seek_layout_padding_hor"
+                android:paddingTop="@dimen/item_seek_layout_padding_ver">
+
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="5"
+                    android:src="@drawable/ic_linear_display_light_weak"/>
+
+            <SeekBar
+                    android:id="@+id/seek_item_operation_bright"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:max="100"
+                    android:maxHeight="3dp"
+                    android:minHeight="3dp"
+                    android:progressDrawable="@drawable/progress_brightness_gradient"
+                    android:thumb="@drawable/ic_linear_display_light_nonius"
+                    android:thumbOffset="0dp"
+                    android:indeterminate="false"/>
+
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="5"
+                    android:src="@drawable/ic_linear_display_light_strong"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/layout_seek_color"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/item_seek_layout_padding_hor"
+                android:paddingRight="@dimen/item_seek_layout_padding_hor"
+                android:paddingBottom="@dimen/item_seek_layout_padding_ver"
+                android:paddingTop="@dimen/item_seek_layout_padding_ver">
+
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="5"
+                    android:src="@drawable/ic_linear_display_color_warm"/>
+
+            <SeekBar
+                    android:id="@+id/seek_item_operation_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:max="100"
+                    android:maxHeight="3dp"
+                    android:minHeight="3dp"
+                    android:progressDrawable="@drawable/progress_color_gradient"
+                    android:thumb="@drawable/ic_linear_display_color_nonius"
+                    android:thumbOffset="0dp"/>
+
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="5"
+                    android:src="@drawable/ic_linear_display_color_cool"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/layout_seek_spot"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/item_seek_layout_padding_ver"
+                android:paddingTop="@dimen/item_seek_layout_padding_ver"
+                android:paddingLeft="@dimen/item_seek_layout_padding_hor"
+                android:paddingRight="@dimen/item_seek_layout_padding_hor">
+
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center_vertical"
+                       android:layout_weight="2"
+                       android:src="@drawable/ic_linear_display_spot_txt"/>
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_linear_display_spot_weak"/>
+
+            <SeekBar
+                    android:id="@+id/seek_item_operation_spot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="12"
+                    android:max="100"
+                    android:maxHeight="3dp"
+                    android:minHeight="3dp"
+                    android:progressDrawable="@drawable/progress_brightness_gradient"
+                    android:thumb="@drawable/ic_linear_display_spot_nonius"
+                    android:thumbOffset="0dp"/>
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_linear_display_spot_strong"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

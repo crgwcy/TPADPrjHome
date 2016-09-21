@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/ic_ble_bg"
+              android:orientation="vertical">
+
+    <!-- Timer - Time -->
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/timer_preview_time_height">
+
+        <EditText
+                android:id="@+id/edit_timer_edit_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@android:color/transparent"
+                android:gravity="center_horizontal"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/timer_edit_edittext_font_size"/>
+    </FrameLayout>
+
+    <!-- Timer - Runnable -->
+
+    <RadioGroup
+            android:layout_width="@dimen/timer_preview_runnable_width"
+            android:layout_height="@dimen/timer_preview_runnable_height"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+        <!-- Timer - Runnable [ All ON / OFF ] -->
+
+        <RadioGroup
+                android:id="@+id/radiogp_timer_edit_runn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/timer_item_padding"
+                android:orientation="horizontal">
+
+            <jp.tpadsz.ihome.singleradio.CustomRadioButton
+                    android:id="@+id/radio_timer_edit_nightlight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/ic_timer_runnable_night"/>
+
+            <jp.tpadsz.ihome.singleradio.CustomRadioButton
+                    android:id="@+id/radio_timer_edit_alloff"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/ic_timer_runnable_alloff"/>
+
+            <jp.tpadsz.ihome.singleradio.CustomRadioButton
+                    android:id="@+id/radio_timer_edit_allon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/ic_timer_runnable_allon"/>
+        </RadioGroup>
+
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_timer_scene_normal"/>
+
+        <!-- Timer - Runnable [ Scene ] -->
+
+        <RadioGroup
+                android:id="@+id/radiogp_timer_edit_scene"
+                android:layout_width="match_parent"
+                android:padding="@dimen/timer_item_padding"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <jp.tpadsz.ihome.singleradio.CustomRadioButton
+                    android:id="@+id/radio_timer_edit_scene_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/icon_radio_scene1"/>
+
+            <jp.tpadsz.ihome.singleradio.CustomRadioButton
+                    android:id="@+id/radio_timer_edit_scene_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/icon_radio_scene2"/>
+
+            <jp.tpadsz.ihome.singleradio.CustomRadioButton
+                    android:id="@+id/radio_timer_edit_scene_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/icon_radio_scene3"/>
+
+            <jp.tpadsz.ihome.singleradio.CustomRadioButton
+                    android:id="@+id/radio_timer_edit_scene_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/icon_radio_scene4"/>
+
+            <jp.tpadsz.ihome.singleradio.CustomRadioButton
+                    android:id="@+id/radio_timer_edit_scene_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/icon_radio_scene5"/>
+        </RadioGroup>
+    </RadioGroup>
+
+    <!-- Timer - Repeate -->
+
+    <LinearLayout
+            android:layout_width="@dimen/timer_preview_repeating_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_timer_repeate_enable"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/timer_item_padding"
+                android:orientation="horizontal">
+
+            <jp.tpadsz.ihome.singleradio.CustomCheckBox
+                    android:id="@+id/check_timer_edit_monday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/ic_timer_repeate_monday"/>
+
+            <jp.tpadsz.ihome.singleradio.CustomCheckBox
+                    android:id="@+id/check_timer_edit_tuesday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/ic_timer_repeate_tuesday"/>
+
+            <jp.tpadsz.ihome.singleradio.CustomCheckBox
+                    android:id="@+id/check_timer_edit_wednesday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/ic_timer_repeate_wednesday"/>
+
+            <jp.tpadsz.ihome.singleradio.CustomCheckBox
+                    android:id="@+id/check_timer_edit_thursday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/ic_timer_repeate_thursday"/>
+
+            <jp.tpadsz.ihome.singleradio.CustomCheckBox
+                    android:id="@+id/check_timer_edit_friday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/ic_timer_repeate_friday"/>
+
+            <jp.tpadsz.ihome.singleradio.CustomCheckBox
+                    android:id="@+id/check_timer_edit_saturday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/ic_timer_repeate_saturday"/>
+
+            <jp.tpadsz.ihome.singleradio.CustomCheckBox
+                    android:id="@+id/check_timer_edit_sunday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/ic_timer_repeate_sunday"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Timer - Func [ Save ] -->
+
+    <ImageButton
+            android:id="@+id/btn_timer_edit_save"
+            style="@style/ble_transparent_center_bg_IMGBTN_STYLE"
+            android:src="@drawable/ic_timer_save"/>
+
+</LinearLayout>

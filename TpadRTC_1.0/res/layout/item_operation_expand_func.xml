@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:paddingLeft="@dimen/preview_expand_func_padding"
+              android:paddingRight="@dimen/preview_expand_func_padding"
+              android:orientation="vertical">
+	<LinearLayout
+	    android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+	    <jp.tpadsz.ihome.singleradio.CustomCheckBox
+	            android:id="@+id/btn_operation_expand_func_nightlight"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:button="@drawable/ic_display_nightlight"/>
+	
+	    <ImageButton
+	            android:id="@+id/btn_operation_expand_func_memory"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:layout_gravity="center_vertical"
+	            android:background="@android:color/transparent"
+	            android:src="@drawable/ic_display_memory"/>
+	    
+	     <jp.tpadsz.ihome.singleradio.CustomCheckBox
+	            android:id="@+id/btn_operation_expand_func_change_color"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:button="@drawable/ic_display_change_color_single"/>
+	
+	    <jp.tpadsz.ihome.singleradio.CustomCheckBox
+	            android:id="@+id/btn_operation_expand_func_spot"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:button="@drawable/ic_display_spot_switch"/>
+	
+	    <jp.tpadsz.ihome.singleradio.CustomCheckBox
+	            android:id="@+id/btn_operation_expand_func_switch"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:button="@drawable/ic_display_switch"/>
+	</LinearLayout>
+	<jp.tpadsz.ihome.singleradio.CustomCheckBox
+	            android:id="@+id/btn_operation_expand_func_connect"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="@dimen/preview_connect_padding"
+	            android:layout_marginBottom="@dimen/preview_connect_padding"
+	            android:gravity="center"
+	            android:layout_weight="1"
+	            android:button="@drawable/ic_display_connect_single"/>
+</LinearLayout>

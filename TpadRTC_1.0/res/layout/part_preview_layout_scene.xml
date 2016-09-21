@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+
+    <jp.tpadsz.ihome.singleradio.CustomCheckBox
+            android:id="@+id/check_preview_switch_1"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:button="@drawable/ic_display_switch"/>
+
+
+    <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <ImageButton
+                android:id="@+id/btn_linear_control_scene1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_btn_scene_1"
+                />
+
+        <ImageButton
+                android:id="@+id/btn_linear_control_scene2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_btn_scene_2"
+                />
+
+        <ImageButton
+                android:id="@+id/btn_linear_control_scene3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_btn_scene_3"
+                />
+
+        <ImageButton
+                android:id="@+id/btn_linear_control_scene4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_btn_scene_4"
+                />
+
+        <ImageButton
+                android:id="@+id/btn_linear_control_scene5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_btn_scene_5"
+                />
+
+        <jp.tpadsz.ihome.singleradio.CustomCheckBox
+                android:id="@+id/check_preview_switch_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:button="@drawable/ic_display_switch"/>
+
+    </LinearLayout>
+
+</LinearLayout>

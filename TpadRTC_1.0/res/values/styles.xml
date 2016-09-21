@@ -1,0 +1,111 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+
+    </style>
+
+    <!-- Activity Theme. -->
+    <style name="NoBarTheme" parent="@android:style/Theme.Holo.Light">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="ModuleActTheme" parent="@android:style/Theme.Holo.Light"/>
+
+
+    <!-- Style [Layout] -->
+
+    <style name="Layout_MM">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="Layout_MW">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Layout_WW">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+<!--     <style name="ble_welcome_BG_STYLE" parent="@style/Layout_MM">
+        <item name="android:background">@drawable/bg_welcome</item>
+    </style> -->
+     <style name="ble_welcome_BG_STYLE" parent="@style/Layout_MM">
+        <item name="android:background">#3f3a39</item>
+    </style>   
+
+    <style name="ble_controller_BG_STYLE" parent="@style/Layout_MM">
+        <item name="android:background">@drawable/bg_act_retrieval_search</item>
+    </style>
+
+    <!-- Style [Controller] -->
+
+    <style name="ble_transparent_bg_IMGBTN_STYLE" parent="@style/Layout_WW">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="ble_transparent_center_bg_IMGBTN_STYLE" parent="@style/Layout_MW">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <!-- Scanning Style -->
+    <style name="scanning_layout_BG_STYLE" parent="@style/ble_controller_BG_STYLE">
+        <item name="android:padding">@dimen/scanning_layout_padding</item>
+    </style>
+
+    <style name="scanning_listview_STYLE" parent="@style/Layout_MM">
+        <item name="android:layout_marginTop">@dimen/ble_list_margin</item>
+        <item name="android:divider">@null</item>
+    </style>
+
+    <style name="scanning_title_include_STYLE">
+        <item name="android:layout_width">@dimen/scanning_title_width</item>
+        <item name="android:layout_height">@dimen/scanning_title_height</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">@dimen/scanning_title_margin_top</item>
+    </style>
+
+    <style name="scanning_buttons_include_STYLE">
+        <item name="android:layout_width">@dimen/scanning_buttons_width</item>
+        <item name="android:layout_height">@dimen/scanning_buttons_height</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:padding">@dimen/scanning_buttons_padding</item>
+        <item name="android:layout_marginTop">@dimen/scanning_buttons_margin_top</item>
+    </style>
+
+    <!-- Timer -->
+    <style name="timer_item_week_FONT_SIZE" parent="@style/Layout_MM">
+        <item name="android:textColor">@drawable/ic_timer_font_color</item>
+        <item name="android:textSize">@dimen/timer_item_week_font_size</item>
+    </style>
+        <color name="bg">#E0000000</color>
+    
+    <style name="CustromTransparentDialog">
+        <item name="android:windowBackground">@color/bg</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    
+</resources>

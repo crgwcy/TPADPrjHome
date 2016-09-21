@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     			xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+  <!--
+     <android.opengl.GLSurfaceView
+            android:id="@id/glview_call"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+      /> 
+  -->
+    
+     <com.RTC.TpadRTC.PercentFrameLayout  
+        android:id="@+id/remote_video_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <org.webrtc.SurfaceViewRenderer
+            android:id="@+id/remote_video_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </com.RTC.TpadRTC.PercentFrameLayout>
+
+    <com.RTC.TpadRTC.PercentFrameLayout
+        android:id="@+id/local_video_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <org.webrtc.SurfaceViewRenderer
+            android:id="@+id/local_video_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </com.RTC.TpadRTC.PercentFrameLayout>
+    
+    
+    <TextView 
+        	android:id="@id/call_time_text_id"
+        	android:text=""
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:textColor="@color/white"
+        	android:textSize="25sp"
+        	android:layout_alignParentTop="true"
+        	android:layout_alignParentRight="true"
+           	android:layout_marginTop="10dp"       	
+        	android:layout_marginRight="20dp"
+        />
+     <FrameLayout
+        android:id="@id/call_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+      <fragment
+        android:name="com.RTC.TpadRTC.MyRTCActivity$MenuBarFragment"
+        android:id="@id/menubar_fragment"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="32dp"
+        tools:layout="@layout/fragment_menubar"/>  
+     
+<!--     <FrameLayout
+        android:id="@id/hud_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />   --> 
+
+</RelativeLayout>

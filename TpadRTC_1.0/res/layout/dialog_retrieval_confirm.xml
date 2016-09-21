@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/layout_dialog_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dialog_retrieval_operate_title" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_dialog_center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dialog_layout_center_margin_top"
+            android:background="@drawable/dialog_retrieval_operate_bg"
+            android:orientation="vertical"
+            android:padding="@dimen/dialog_layout_center_padding" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dialog_edit_center_margin_top" >
+
+                <EditText
+                    android:id="@+id/dialog_edit_rename"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/dialog_edit_font_size" />
+
+                <TextView
+                    android:id="@+id/dialog_txt_rename"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:singleLine="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/dialog_edit_font_size" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/dialog_txt_search_mac"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dialog_id_center_margin_top"
+                android:gravity="center_horizontal"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_dialog_bottom"
+            android:layout_width="@dimen/dialog_buttons_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dialog_buttons_center_margin_top"
+            android:orientation="horizontal" >
+
+            <include layout="@layout/part_confirm_buttons" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

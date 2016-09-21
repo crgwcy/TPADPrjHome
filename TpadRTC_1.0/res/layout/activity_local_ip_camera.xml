@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LocalIpCameraActivity"
+    android:background="#3f3a39"
+    android:orientation="vertical"
+     >
+     
+  	<com.tpad.myViews.CameraShowSurface
+	    android:id="@id/camera_surface_id"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"	    
+	    android:longClickable="true"
+	    /> 
+      
+	    <TextView
+        android:id="@id/ip_camera_tittle_id" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"  
+        android:text="IP Camera"
+        android:gravity="center_horizontal"
+        android:paddingTop="30dp"
+        android:paddingBottom="10dp"        
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:textSize="32sp"    
+        />         
+        <fragment
+        android:name="com.tpad.pad.activitys.IpCameraActivity$MenuBarFragment"
+        android:id="@id/ip_camera_menubar_fragment_id"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="52dp"
+        tools:layout="@layout/fragment_menubar"/>   
+   
+
+</RelativeLayout>

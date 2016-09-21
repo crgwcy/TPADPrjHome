@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+	1.android:descendantFocusability：ViewGroup阻止其子View接收焦点
+--> 
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@id/menu_list_item_layout"
+	android:layout_width="fill_parent"
+	android:layout_height="82.0dip"
+	android:background="@drawable/main_menu_list_item_selector"
+	android:descendantFocusability="blocksDescendants"
+	android:marqueeRepeatLimit="marquee_forever">
+	<RelativeLayout
+		android:id="@id/menu_item_info_layout"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginRight="20.0dip">
+		<ImageView android:id="@id/menu_icon"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="30dp"  
+			android:layout_centerVertical="true"	
+			android:src="@drawable/light_icon"			
+      		android:scaleType="fitXY"
+      		android:paddingTop="25dp"
+      		android:paddingBottom="25dp"
+		    />		
+		<TextView
+			android:id="@id/menu_list_item_title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_toRightOf="@id/menu_icon"			    
+
+			android:textSize="23.0dip"
+			android:textStyle="bold"
+			android:textColor="@color/white_color"
+			android:text="title "
+			android:singleLine="true"
+			android:marqueeRepeatLimit="marquee_forever" />
+		<TextView
+            android:id="@id/menu_list_item_title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:layout_centerVertical="true"	
+            android:layout_marginRight="40dp"       
+             
+            android:layout_alignParentRight="true"
+            android:singleLine="true"
+            android:text="title"
+            android:textColor="@color/white_color"
+            android:textSize="25sp"
+            android:textStyle="normal" />
+</RelativeLayout>
+</RelativeLayout>	

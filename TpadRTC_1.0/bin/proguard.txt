@@ -1,0 +1,156 @@
+# view res/layout/activity_hik_camera.xml #generated:9
+# view res/layout/activity_ip_camera.xml #generated:12
+-keep class android.opengl.GLSurfaceView { <init>(...); }
+
+# view res/layout/act_theme_display.xml #generated:44
+-keep class android.support.v4.view.ViewPager { <init>(...); }
+
+# view AndroidManifest.xml #generated:177
+-keep class com.RTC.TpadRTC.MyRTCActivity { <init>(...); }
+
+# view res/layout/activity_call.xml #generated:53
+-keep class com.RTC.TpadRTC.MyRTCActivity$MenuBarFragment { <init>(...); }
+
+# view res/layout/activity_call.xml #generated:16
+# view res/layout/activity_call.xml #generated:26
+-keep class com.RTC.TpadRTC.PercentFrameLayout { <init>(...); }
+
+# view AndroidManifest.xml #generated:294
+-keep class com.RTC.TpadRTC.SettingsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:203
+-keep class com.mywebrtc.util.WSClientService { <init>(...); }
+
+# view AndroidManifest.xml #generated:264
+-keep class com.tpad.activitys.AlarmActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:209
+-keep class com.tpad.activitys.CallActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:252
+-keep class com.tpad.activitys.CameraListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:197
+-keep class com.tpad.activitys.CommunityActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:232
+-keep class com.tpad.activitys.LightActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:140
+-keep class com.tpad.activitys.LoginActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:193
+-keep class com.tpad.activitys.MainMenuActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:205
+-keep class com.tpad.activitys.RingActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:290
+-keep class com.tpad.activitys.TestMjpegActivity { <init>(...); }
+
+# view res/layout/activity_ip_camera.xml #generated:18
+# view res/layout/activity_local_ip_camera.xml #generated:10
+-keep class com.tpad.myViews.CameraShowSurface { <init>(...); }
+
+# view res/layout/activity_light.xml #generated:62
+-keep class com.tpad.myViews.DrawView { <init>(...); }
+
+# view AndroidManifest.xml #generated:246
+-keep class com.tpad.pad.activitys.HikCameraActivity { <init>(...); }
+
+# view res/layout/activity_ip_camera.xml #generated:37
+-keep class com.tpad.pad.activitys.HikCameraActivity$MenuBarFragment { <init>(...); }
+
+# view res/layout/activity_local_ip_camera.xml #generated:28
+-keep class com.tpad.pad.activitys.IpCameraActivity$MenuBarFragment { <init>(...); }
+
+# view AndroidManifest.xml #generated:258
+-keep class com.tpad.pad.activitys.LocalIpCameraActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:225
+-keep class com.tpad.pad.activitys.PadCommunityActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:239
+-keep class com.tpad.pad.activitys.PadLightActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:213
+-keep class com.tpad.pad.activitys.PadStandbyActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:136
+-keep class jp.co.odelic.smt.remote03.act.module.InforUpdateAct { <init>(...); }
+
+# view AndroidManifest.xml #generated:130
+-keep class jp.co.odelic.smt.remote03.act.module.LightSettingAct { <init>(...); }
+
+# view AndroidManifest.xml #generated:92
+-keep class jp.co.odelic.smt.remote03.act.module.MainController { <init>(...); }
+
+# view AndroidManifest.xml #generated:100
+-keep class jp.co.odelic.smt.remote03.act.module.RetrievalDeviceAct { <init>(...); }
+
+# view AndroidManifest.xml #generated:104
+-keep class jp.co.odelic.smt.remote03.act.module.RetrievalSelectedAct { <init>(...); }
+
+# view AndroidManifest.xml #generated:123
+-keep class jp.co.odelic.smt.remote03.act.module.ThemeDisplayAct { <init>(...); }
+
+# view AndroidManifest.xml #generated:115
+-keep class jp.co.odelic.smt.remote03.act.module.TimerEditorAct { <init>(...); }
+
+# view AndroidManifest.xml #generated:111
+-keep class jp.co.odelic.smt.remote03.act.module.TimerSettingAct { <init>(...); }
+
+# view AndroidManifest.xml #generated:76
+-keep class jp.co.odelic.smt.remote03.act.module.WelcomeAct { <init>(...); }
+
+# view res/layout/fragment_map_controller.xml #generated:47
+-keep class jp.co.odelic.smt.remote03.act.view.MapControllerView { <init>(...); }
+
+# view AndroidManifest.xml #generated:65
+-keep class jp.co.odelic.smt.remote03.serv.LightService { <init>(...); }
+
+# view res/layout/act_main_controller.xml #generated:72
+-keep class jp.tpadsz.ihome.deprview.SlidingDrawer { <init>(...); }
+
+# view res/layout/fragment_linear_controller.xml #generated:5
+-keep class jp.tpadsz.ihome.list.DragExpandableListView { <init>(...); }
+
+# view res/layout/act_timer_editor.xml #generated:135
+# view res/layout/act_timer_editor.xml #generated:142
+# view res/layout/act_timer_editor.xml #generated:149
+# view res/layout/act_timer_editor.xml #generated:156
+# view res/layout/act_timer_editor.xml #generated:163
+# view res/layout/act_timer_editor.xml #generated:170
+# view res/layout/act_timer_editor.xml #generated:177
+# view res/layout/fragment_map_controller.xml #generated:110
+# view res/layout/item_operation_expand_func.xml #generated:12
+# view res/layout/item_operation_expand_func.xml #generated:28
+# view res/layout/item_operation_expand_func.xml #generated:35
+# view res/layout/item_operation_expand_func.xml #generated:42
+# view res/layout/item_operation_expand_func.xml #generated:49
+# view res/layout/item_timer_setting.xml #generated:53
+# view res/layout/part_preview_layout_scene.xml #generated:68
+# view res/layout/part_preview_layout_scene.xml #generated:8
+# view res/layout/part_timer_editor_week.xml #generated:16
+# view res/layout/part_timer_editor_week.xml #generated:23
+# view res/layout/part_timer_editor_week.xml #generated:30
+# view res/layout/part_timer_editor_week.xml #generated:37
+# view res/layout/part_timer_editor_week.xml #generated:44
+# view res/layout/part_timer_editor_week.xml #generated:51
+# view res/layout/part_timer_editor_week.xml #generated:9
+-keep class jp.tpadsz.ihome.singleradio.CustomCheckBox { <init>(...); }
+
+# view res/layout/act_timer_editor.xml #generated:100
+# view res/layout/act_timer_editor.xml #generated:107
+# view res/layout/act_timer_editor.xml #generated:43
+# view res/layout/act_timer_editor.xml #generated:50
+# view res/layout/act_timer_editor.xml #generated:57
+# view res/layout/act_timer_editor.xml #generated:79
+# view res/layout/act_timer_editor.xml #generated:86
+# view res/layout/act_timer_editor.xml #generated:93
+-keep class jp.tpadsz.ihome.singleradio.CustomRadioButton { <init>(...); }
+
+# view res/layout/activity_call.xml #generated:20
+# view res/layout/activity_call.xml #generated:30
+-keep class org.webrtc.SurfaceViewRenderer { <init>(...); }
+

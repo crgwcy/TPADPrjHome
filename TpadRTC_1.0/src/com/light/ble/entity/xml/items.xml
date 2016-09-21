@@ -1,0 +1,10 @@
+<items>
+    <item name="A / B" count="2">
+        <device mac="xx:xx:xx:xx:xx:xx" name="" code="1"/>
+        <device mac="xx:xx:xx:xx:xx:xx" name="" code="1"/>
+    </item>
+
+    <item name="C" count="1">
+        <device mac="xx:xx:xx:xx:xx:xx" name="" code="1"/>
+    </item>
+</items>

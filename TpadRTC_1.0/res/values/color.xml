@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="timer_item_font_color_online">#FFFFFFFF</color>
+    <color name="timer_item_font_color_offline">#FF888888</color>
+    
+    <color name="list_item_color">#FF555555</color>
+    <color name="list_color">#FF3F3B3A</color>
+
+    <color name="infor_version_font_color">#FFAAAAAA</color>
+    
+</resources>

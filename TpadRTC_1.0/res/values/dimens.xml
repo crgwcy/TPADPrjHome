@@ -1,0 +1,115 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+  <dimen name="ble_list_margin">30dp</dimen>
+    <dimen name="action_bar_img_return_width">50dp</dimen>
+
+    <!-- map controller -->
+    <dimen name="map_controller_title_font_size">20sp</dimen>
+    <dimen name="map_controller_title_padding">20dp</dimen>
+    <dimen name="map_controller_title_height">50dp</dimen>
+    <dimen name="map_controller_view_padding">15dp</dimen>
+    <dimen name="map_controller_func_margin_top">6dp</dimen>
+    <dimen name="map_controller_seek_margin_top">6dp</dimen>
+
+    <!-- preview dimen -->
+    <dimen name="preview_func_padding">15dp</dimen>
+    <dimen name="preview_func_margin">60dp</dimen>
+    <dimen name="preview_menu_width">300dp</dimen>
+    <dimen name="preview_menu_height">500dp</dimen>
+    <dimen name="preview_menu_info_font_size">25sp</dimen>
+    <dimen name="preview_menu_font_size">30sp</dimen>
+    <dimen name="preview_menu_margin">30dp</dimen>
+    <dimen name="preview_menu_padding">40dp</dimen>
+    <dimen name="preview_menu_margin_top">50dp</dimen>
+    <dimen name="preview_func_scene_margin">10dp</dimen>
+    <dimen name="preview_menu_handler_width">50dp</dimen>
+    <dimen name="preview_menu_handler_height">40dp</dimen>
+
+    <dimen name="preview_expand_func_padding">40dp</dimen>
+    <dimen name="preview_connect_padding">25dp</dimen>
+
+    <!-- item for preview list -->
+    <dimen name="item_width">400dp</dimen>
+    <dimen name="item_height">60dp</dimen>
+    <dimen name="item_func_width">400dp</dimen>
+    <dimen name="item_func_height">30dp</dimen>
+    <dimen name="item_func_padding">20dp</dimen>
+
+    <!-- item controls for preview list -->
+    <dimen name="item_preview_indicate_width">30dp</dimen>
+    <dimen name="item_preview_layout_padding_ver">5dp</dimen>
+    <dimen name="item_preview_layout_padding_hor">10dp</dimen>
+    <dimen name="item_seek_layout_height">50dp</dimen>
+    <dimen name="item_seek_layout_padding_hor">15dp</dimen>
+    <dimen name="item_seek_layout_padding_left">8dp</dimen>
+    <dimen name="item_seek_layout_padding_hor_map">50dp</dimen>
+    <dimen name="item_seek_layout_padding_ver">5dp</dimen>
+    <dimen name="item_seek_layout_title_font_size">20sp</dimen>
+
+    <!-- Scanning list dimen -->
+    <dimen name="scanning_title_width">300dp</dimen>
+    <dimen name="scanning_title_height">40dp</dimen>
+    <dimen name="scanning_title_margin_top">20dp</dimen>
+    <dimen name="scanning_buttons_width">300dp</dimen>
+    <dimen name="scanning_buttons_height">100dp</dimen>
+    <dimen name="scanning_buttons_margin_top">30dp</dimen>
+    <dimen name="scanning_layout_padding">20dp</dimen>
+    <dimen name="scanning_devices_padding">80dp</dimen>
+    <dimen name="scanning_buttons_padding">15dp</dimen>
+
+    <!-- item for scanning list -->
+    <dimen name="item_scanning_devcie_name_font_size">25sp</dimen>
+    <dimen name="item_scanning_devcie_addr_font_size">25sp</dimen>
+
+    <!-- Custom Dialog Preview -->
+    <dimen name="dialog_edit_width">150dp</dimen>
+    <dimen name="dialog_layout_center_padding">20dp</dimen>
+    <dimen name="dialog_layout_center_margin_top">30dp</dimen>
+    <dimen name="dialog_edit_center_margin_top">10dp</dimen>
+    <dimen name="dialog_edit_font_size">25sp</dimen>
+    <dimen name="dialog_id_center_margin_top">10dp</dimen>
+    <dimen name="dialog_buttons_center_margin_top">40dp</dimen>
+    <dimen name="dialog_buttons_width">300dp</dimen>
+
+    <!-- Module Act -->
+    <dimen name="module_actionbar_padding_left">10dp</dimen>
+    <dimen name="module_actionbar_padding_right">10dp</dimen>
+
+    <!-- Timer Act -->
+
+
+    <!-- Item for timer -->
+    <dimen name="timer_preview_time_height">120dp</dimen>
+    <dimen name="timer_preview_runnable_width">250dp</dimen>
+    <dimen name="timer_preview_runnable_height">220dp</dimen>
+    <dimen name="timer_preview_repeating_width">300dp</dimen>
+    <dimen name="timer_item_padding">10dp</dimen>
+
+    <dimen name="timer_item_height">100dp</dimen>
+    <dimen name="timer_item_indicate_width">45dp</dimen>
+    <dimen name="timer_item_indicate_font_size">40sp</dimen>
+    <dimen name="timer_item_time_font_size">40sp</dimen>
+    <dimen name="timer_item_week_font_size">20sp</dimen>
+    <dimen name="timer_item_scene_font_size">20sp</dimen>
+    <dimen name="timer_item_week_margin_left">20dp</dimen>
+    <dimen name="timer_item_divider_width">2dp</dimen>
+    <dimen name="timer_item_divider_padding_left">10dp</dimen>
+    <dimen name="timer_item_divider_padding_right">20dp</dimen>
+    <dimen name="timer_item_content_top_height">45dp</dimen>
+    <dimen name="timer_item_content_bottom_height">55dp</dimen>
+    <dimen name="timer_edit_edittext_font_size">50sp</dimen>
+
+    <!-- Display -->
+    <dimen name="display_preview_padding_col">40dp</dimen>
+    <dimen name="display_setting_padding">30dp</dimen>
+
+    <!-- Information -->
+    <dimen name="infor_title_margin_top">20dp</dimen>
+    <dimen name="infor_version_margin_top">25dp</dimen>
+    <dimen name="infor_update_margin_bottom">20dp</dimen>
+    <dimen name="infor_version_font_size">20sp</dimen>
+    
+</resources>

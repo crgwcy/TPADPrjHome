@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/timer_item_height"
+              android:descendantFocusability="blocksDescendants"
+              android:orientation="horizontal"
+              android:padding="10dp">
+
+    <!-- The id for left. -->
+
+    <TextView
+            android:id="@+id/txt_item_light_controller_indicate"
+            android:layout_width="@dimen/timer_item_indicate_width"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@drawable/ic_timer_font_color"
+            android:textSize="@dimen/timer_item_indicate_font_size"/>
+
+    <!-- The divider for id and content -->
+
+    <ImageView
+            android:id="@+id/img_item_light_controller_divider"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@color/timer_item_font_color_online"
+            android:paddingLeft="@dimen/timer_item_divider_padding_left"
+            android:paddingRight="@dimen/timer_item_divider_padding_right"/>
+
+    <!-- Content for setting. -->
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+        <TextView
+                android:id="@+id/txt_item_light_controller_lightname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@drawable/ic_timer_font_color"
+                android:layout_gravity="left"
+                android:text="hello"/>
+
+        <ImageButton
+                android:id="@+id/btn_item_light_controller_unbind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_light_controller_unbind"/>
+    </LinearLayout>
+
+</LinearLayout>

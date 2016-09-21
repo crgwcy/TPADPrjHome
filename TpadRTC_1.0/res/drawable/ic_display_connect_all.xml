@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+	   
+    <item android:drawable="@drawable/ic_display_all_connect" android:state_checked="false" android:state_enabled="true"></item>
+    <item android:drawable="@drawable/ic_display_all_connect_disable" android:state_checked="false" android:state_enabled="false"></item>
+    <item android:drawable="@drawable/ic_display_all_disconnect" android:state_checked="true" android:state_enabled="true"></item>
+    <item android:drawable="@drawable/ic_display_all_disconnect_disable" android:state_checked="true" android:state_enabled="false"></item>
+    
+</selector>

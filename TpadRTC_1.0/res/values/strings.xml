@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TpadHome</string>
+    <!-- 121.40.34.48       47.88.136.111 -->
+    <string name="host">121.40.34.48</string>
+    <string name="port">3000</string>
+    <string name="title_activity_main_menu">MainMenuActivity</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- main menu activity -->
+    <string name="tittle">home</string>
+    <string name="menu">menu</string>
+    <string name="title_activity_community">CommunityActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="disconnect_call">Disconnect Call</string>
+    <string name="switch_camera">switch camera</string>
+    <string name="title_activity_ring">RingActivity</string>
+
+    <!-- Ring activity -->
+    <!-- <string name="title_activity_ring">RingActivity</string> -->
+    <string name="ring_answer">answer</string>
+    <string name="ring_decline">decline</string>
+    <string name="video_call">VIDEO CALL</string>
+
+    <!-- call activity -->
+    <string name="btn_cancel">cancel</string>
+    <string name="title_activity_call">CallActivity</string>
+    <string name="title_activity_mai">MaiActivity</string>
+    <string name="title_activity_pad_standby">PadStandbyActivity</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <!-- light activity -->
+
+    <string name="light_tittle">LIGHT</string>
+    <string name="light_name">odelic1</string>
+    <string name="scene">SCENE</string>
+    <string name="title_activity_pad_light">PadLightActivity</string>
+    <string name="title_activity_ip_camera">IpCameraActivity</string>
+    <string name="title_alarm_activity">AlarmActivity</string>
+
+    <!-- hk camera part -->
+    <string name="stop">停  止</string>
+    <string name="start">预  览</string>
+    <string name="settings">设  置</string>
+    <string name="tv_connect_cam">连接中.......</string>
+    <string name="but_up">上仰</string>
+    <string name="but_down">下俯</string>
+    <string name="but_left">左摆</string>
+    <string name="but_right">右摆</string>
+    <string name="but_up_left">上仰</string>
+    <string name="but_up_right">上仰</string>
+    <string name="but_down_left">上仰</string>
+    <string name="but_down_right">上仰</string>
+
+    <!-- BULE TOOTH MODULE -->
+    <string name="jp_version_about">ODELIC APP Ver : %s</string>
+    <string name="app_version">1.1.1</string>
+    <string name="map_all">ALL</string>
+
+    <!-- Preview Menu -->
+    <string name="preview_txt_menu">MENU</string>
+    <string name="preview_txt_search">SURCH</string>
+    <string name="preview_txt_timer">TIMER</string>
+    <string name="preview_txt_display">DISPLAY</string>
+    <string name="preview_txt_light">LIGHT</string>
+    <string name="preview_txt_info">information</string>
+
+    <!-- Timer item -->
+    <string name="jp_timer_item_repeate_monday">月</string>
+    <string name="jp_timer_item_repeate_tuesday">火</string>
+    <string name="jp_timer_item_repeate_wednesday">水</string>
+    <string name="jp_timer_item_repeate_thursday">木</string>
+    <string name="jp_timer_item_repeate_friday">金</string>
+    <string name="jp_timer_item_repeate_saturday">土</string>
+    <string name="jp_timer_item_repeate_sunday">日</string>
+    <string name="jp_timer_item_repeate_default">-</string>
+
+    <string-array name="jp_timer_item_repeates">
+        <item>@string/jp_timer_item_repeate_monday</item>
+        <item>@string/jp_timer_item_repeate_tuesday</item>
+        <item>@string/jp_timer_item_repeate_wednesday</item>
+        <item>@string/jp_timer_item_repeate_thursday</item>
+        <item>@string/jp_timer_item_repeate_friday</item>
+        <item>@string/jp_timer_item_repeate_saturday</item>
+        <item>@string/jp_timer_item_repeate_sunday</item>
+        <item>@string/jp_timer_item_repeate_default</item>
+    </string-array>
+
+    <string name="title_activity_test_mjpgcamera">TestMJPGCameraActivity</string>
+    <string name="title_activity_test_mjpeg">TestMjpegActivity</string>
+    
+    
+        <!-- Settings strings.     new add-->
+    <string name="pref_room_key">room_preference</string>
+    <string name="pref_room_list_key">room_list_preference</string>
+
+    <string name="pref_videosettings_key">video_settings_key</string>
+    <string name="pref_videosettings_title">WebRTC video settings.</string>
+
+    <string name="pref_videocall_key">videocall_preference</string>
+    <string name="pref_videocall_title">Video call.</string>
+    <string name="pref_videocall_dlg">Enable video in a call.</string>
+    <string name="pref_videocall_default">true</string>
+
+    <string name="pref_resolution_key">resolution_preference</string>
+    <string name="pref_resolution_title">Video resolution.</string>
+    <string name="pref_resolution_dlg">Enter AppRTC local video resolution.</string>
+    <string name="pref_resolution_default">Default</string>
+
+    <string name="pref_fps_key">fps_preference</string>
+    <string name="pref_fps_title">Camera fps.</string>
+    <string name="pref_fps_dlg">Enter local camera fps.</string>
+    <string name="pref_fps_default">Default</string>
+
+    <string name="pref_capturequalityslider_key">capturequalityslider_preference</string>
+    <string name="pref_capturequalityslider_title">Capture quality slider.</string>
+    <string name="pref_capturequalityslider_dlg">Enable slider for changing capture quality.</string>
+    <string name="pref_capturequalityslider_default">false</string>
+
+    <string name="pref_startvideobitrate_key">startvideobitrate_preference</string>
+    <string name="pref_startvideobitrate_title">Start video bitrate setting.</string>
+    <string name="pref_startvideobitrate_dlg">Start video bitrate setting.</string>
+    <string name="pref_startvideobitrate_default">Default</string>
+
+    <string name="pref_startvideobitratevalue_key">startvideobitratevalue_preference</string>
+    <string name="pref_startvideobitratevalue_title">Video encoder start bitrate.</string>
+    <string name="pref_startvideobitratevalue_dlg">Enter video encoder start bitrate in kbps.</string>
+    <string name="pref_startvideobitratevalue_default">1000</string>
+
+    <string name="pref_videocodec_key">videocodec_preference</string>
+    <string name="pref_videocodec_title">Default video codec.</string>
+    <string name="pref_videocodec_dlg">Select default video codec.</string>
+    <string name="pref_videocodec_default">VP8</string>
+
+    <string name="pref_hwcodec_key">hwcodec_preference</string>
+    <string name="pref_hwcodec_title">Video codec hardware acceleration.</string>
+    <string name="pref_hwcodec_dlg">Use hardware accelerated video codec (if available).</string>
+    <string name="pref_hwcodec_default">true</string>
+
+    <string name="pref_capturetotexture_key">capturetotexture_preference</string>
+    <string name="pref_capturetotexture_title">Video capture to surface texture.</string>
+    <string name="pref_capturetotexture_dlg">Capture video to textures (if available).</string>
+    <string name="pref_capturetotexture_default">false</string>
+
+    <string name="pref_value_enabled">Enabled</string>
+    <string name="pref_value_disabled">Disabled</string>
+
+    <string name="pref_audiosettings_key">audio_settings_key</string>
+    <string name="pref_audiosettings_title">WebRTC audio settings.</string>
+
+    <string name="pref_startaudiobitrate_key">startaudiobitrate_preference</string>
+    <string name="pref_startaudiobitrate_title">Audio bitrate setting.</string>
+    <string name="pref_startaudiobitrate_dlg">Audio bitrate setting.</string>
+    <string name="pref_startaudiobitrate_default">Default</string>
+
+    <string name="pref_startaudiobitratevalue_key">startaudiobitratevalue_preference</string>
+    <string name="pref_startaudiobitratevalue_title">Audio codec bitrate.</string>
+    <string name="pref_startaudiobitratevalue_dlg">Enter audio codec bitrate in kbps.</string>
+    <string name="pref_startaudiobitratevalue_default">32</string>
+
+    <string name="pref_audiocodec_key">audiocodec_preference</string>
+    <string name="pref_audiocodec_title">Default audio codec.</string>
+    <string name="pref_audiocodec_dlg">Select default audio codec.</string>
+    <string name="pref_audiocodec_default">OPUS</string>
+
+    <string name="pref_noaudioprocessing_key">audioprocessing_preference</string>
+    <string name="pref_noaudioprocessing_title">Disable audio processing.</string>
+    <string name="pref_noaudioprocessing_dlg">Disable audio processing pipeline.</string>
+    <string name="pref_noaudioprocessing_default">false</string>
+
+    <string name="pref_aecdump_key">aecdump_preference</string>
+    <string name="pref_aecdump_title">Create aecdump.</string>
+    <string name="pref_aecdump_dlg">Enable diagnostic audio recordings.</string>
+    <string name="pref_aecdump_default">false</string>
+
+    <string name="pref_opensles_key">opensles_preference</string>
+    <string name="pref_opensles_title">Use OpenSL ES for audio playback.</string>
+    <string name="pref_opensles_dlg">Use OpenSL ES for audio playback.</string>
+    <string name="pref_opensles_default">false</string>
+
+    <string name="pref_miscsettings_key">misc_settings_key</string>
+    <string name="pref_miscsettings_title">Miscellaneous settings.</string>
+
+    <string name="pref_room_server_url_key">room_server_url_preference</string>
+    <string name="pref_room_server_url_title">Room server URL.</string>
+    <string name="pref_room_server_url_dlg">Enter a room server URL.</string>
+    <string name="pref_room_server_url_default" translatable="false">https://apprtc.appspot.com</string>
+
+    <string name="pref_displayhud_key">displayhud_preference</string>
+    <string name="pref_displayhud_title">Display call statistics.</string>
+    <string name="pref_displayhud_dlg">Display call statistics.</string>
+    <string name="pref_displayhud_default" translatable="false">false</string>
+
+    <string name="pref_tracing_key">tracing_preference</string>
+    <string name="pref_tracing_title">Debug performance tracing.</string>
+    <string name="pref_tracing_dlg">Debug performance tracing.</string>
+    <string name="pref_tracing_default" translatable="false">false</string>
+    
+    
+    
+    
+
+</resources>

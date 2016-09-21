@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                style="@style/ble_controller_BG_STYLE">
+
+                 
+    <CheckBox
+            android:id="@+id/btn_operation_all_connect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+   		    android:layout_alignParentBottom="true"
+   		    android:layout_marginLeft="@dimen/preview_expand_func_padding"
+   		    android:layout_marginBottom="@dimen/preview_func_padding"
+            android:button="@drawable/ic_display_connect_all"/>
+    
+    <CheckBox
+            android:id="@+id/btn_operation_change_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+   		    android:layout_alignParentBottom="true"
+   		    android:layout_marginRight="@dimen/preview_expand_func_padding"
+   		    android:layout_marginBottom="@dimen/preview_func_padding"
+            android:button="@drawable/ic_display_changecolor"/>
+
+    <LinearLayout
+            android:id="@+id/layout_preview_func"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/btn_operation_all_connect"
+            android:layout_marginBottom="@dimen/preview_func_margin"
+            android:orientation="vertical"
+            android:padding="@dimen/preview_func_padding">
+
+        <include layout="@layout/part_preview_layout_scene"/>
+    </LinearLayout>
+
+    <!--
+         <ListView
+        android:id="@+id/list_preview_controller"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/layout_preview_func"
+        android:layout_marginTop="@dimen/ble_list_margin"
+        android:listSelector="@android:drawable/list_selector_background" />
+    -->
+
+    <!--<jp.tpadsz.ihome.list.DragExpandableListView-->
+    <!--android:id="@+id/list_preview_controller"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_above="@id/layout_preview_func"-->
+    <!--android:layout_marginTop="@dimen/ble_list_margin"-->
+    <!--android:drawSelectorOnTop="false"-->
+    <!--android:listSelector="@android:drawable/list_selector_background"/>-->
+
+	    <RelativeLayout
+	            android:id="@+id/container_controller"
+	            android:layout_width="match_parent"
+	            android:layout_above="@id/layout_preview_func"
+	            android:layout_height="match_parent"/>
+
+
+	    <ImageView
+	            android:id="@+id/img_for_navigate"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:background="@drawable/bg_navigate"
+	            android:contentDescription="@string/app_name"
+	            />
+  
+        <jp.tpadsz.ihome.deprview.SlidingDrawer
+        xmlns:ihome="http://schemas.android.com/apk/res/com.RTC.TpadRTC"
+        android:id="@+id/slid_preview_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ihome:content="@+id/slid_preview_content"
+        ihome:handle="@+id/slid_preview_handle_open">
+<!--        
+	   <jp.tpadsz.ihome.deprview.SlidingDrawer
+          android:id="@+id/slid_preview_menu"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:content="@+id/slid_preview_content"
+          android:handle="@+id/slid_preview_handle_open"> 
+   -->
+
+        <ImageButton
+         android:id="@+id/slid_preview_handle_open"
+         android:layout_width="@dimen/preview_menu_handler_width"
+         android:layout_height="@dimen/preview_menu_handler_height"
+         android:src="@drawable/ic_handler_bottom"
+         android:background="@android:color/transparent"
+         android:contentDescription="@string/app_name"/>
+
+        <RelativeLayout
+                android:id="@+id/slid_preview_content"
+                style="@style/ble_controller_BG_STYLE"
+                android:orientation="vertical">
+
+            <ImageButton
+                    android:id="@+id/slid_preview_handle_close"
+                    android:layout_width="@dimen/preview_menu_handler_width"
+                    android:layout_height="@dimen/preview_menu_handler_height"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_handler_bottom"/>
+
+            <ImageView
+                    android:id="@+id/img_controller_preview_menu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/slid_preview_handle_close"
+                    android:layout_marginTop="@dimen/preview_menu_margin_top"
+                    android:gravity="center_horizontal"
+                    android:src="@drawable/ic_menu_title"/>
+
+            <include
+                    android:layout_width="@dimen/preview_menu_width"
+                    android:layout_height="@dimen/preview_menu_height"
+                    android:layout_below="@id/img_controller_preview_menu"
+                    android:layout_centerInParent="true"
+                    layout="@layout/part_preview_layout_menu"/>
+        </RelativeLayout>
+    </jp.tpadsz.ihome.deprview.SlidingDrawer>
+
+   
+
+</RelativeLayout>

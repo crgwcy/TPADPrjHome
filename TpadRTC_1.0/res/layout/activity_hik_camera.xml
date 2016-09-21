@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:ignore="HardcodedText" >
+
+ 
+   	<android.opengl.GLSurfaceView
+        android:id="@+id/hik_camera_glview_id"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" 
+    />   
+           
+      <SurfaceView
+          android:id="@+id/hik_camera_surface_id"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+        />
+ <!--  	<android.opengl.GLSurfaceView
+        android:id="@+id/hik_camera_glview_id"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" 
+    />  --> 
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@id/hik_camera_btns_container_id"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" 
+        android:layout_marginBottom="30dp">   
+        <ImageButton 
+            android:id="@id/hik_camera_hangup_btn_id"
+            android:background="@drawable/disconnect"
+        	android:layout_width="50dp"
+        	android:layout_height="50dp"   	        	
+        	android:contentDescription="@string/disconnect_call">   
+        </ImageButton>
+        <ImageButton 
+            android:id="@id/hik_camera_set_btn_id"
+            android:background="@drawable/hik_camera_set"
+        	android:layout_width="50dp"
+        	android:layout_height="50dp"
+         	android:layout_marginLeft="15dp"     	        	
+        	android:contentDescription="@string/disconnect_call">   
+        </ImageButton>
+        <ImageButton 
+            android:id="@id/hik_camera_up_btn_id"
+            android:background="@drawable/up_arrow"
+        	android:layout_width="50dp"
+        	android:layout_height="50dp"
+           	android:layout_marginLeft="15dp"     	        	
+        	android:contentDescription="@string/disconnect_call">   
+        </ImageButton>        
+        <ImageButton 
+            android:id="@id/hik_camera_down_btn_id"
+            android:background="@drawable/down_arrow"
+        	android:layout_width="50dp"
+        	android:layout_height="50dp"
+           	android:layout_marginLeft="15dp"     	        	
+        	android:contentDescription="@string/disconnect_call">   
+        </ImageButton>   
+        <ImageButton 
+            android:id="@id/hik_camera_left_btn_id"
+            android:background="@drawable/left_arrow"
+        	android:layout_width="50dp"
+        	android:layout_height="50dp"
+           	android:layout_marginLeft="15dp"     	
+        	android:contentDescription="@string/disconnect_call">   
+        </ImageButton>
+        <ImageButton 
+            android:id="@id/hik_camera_right_btn_id"
+            android:background="@drawable/right_arrow"
+        	android:layout_width="50dp"
+        	android:layout_height="50dp"
+        	android:layout_marginLeft="15dp"
+        	android:contentDescription="@string/disconnect_call">   
+        </ImageButton> 
+        
+         <ImageButton 
+            android:id="@id/hik_camera_speaker_btn_id"
+            android:background="@drawable/speaker"
+        	android:layout_width="50dp"
+        	android:layout_height="50dp"
+         	android:layout_marginLeft="15dp"     	        	
+        	android:contentDescription="@string/disconnect_call">   
+        </ImageButton>   
+<!--         <Button
+            android:id="@+id/start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="预 览" 
+            style="?android:attr/buttonBarButtonStyle" />
+
+        <Button
+            android:id="@+id/stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="停止" 
+            style="?android:attr/buttonBarButtonStyle" />
+
+        <Button
+            android:id="@+id/set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设 置" 
+            style="?android:attr/buttonBarButtonStyle" />
+        
+        <Button
+            android:id="@+id/bt_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上" 
+            style="?android:attr/buttonBarButtonStyle" />
+        <Button
+            android:id="@+id/bt_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="下" 
+            style="?android:attr/buttonBarButtonStyle" />
+        <Button
+            android:id="@+id/bt_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="左" 
+            style="?android:attr/buttonBarButtonStyle" />
+        <Button
+            android:id="@+id/bt_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="右" 
+            style="?android:attr/buttonBarButtonStyle" /> -->
+      
+    </LinearLayout>
+
+</RelativeLayout>

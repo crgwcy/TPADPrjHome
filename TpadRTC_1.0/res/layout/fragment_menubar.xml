@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+               tools:context="com.RTC.TpadRTC.MyRTCActivity$MenuBarFragment"
+              android:id="@+id/menubar"
+              android:orientation="horizontal"
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:layout_gravity="center_vertical|center_horizontal">
+
+    <ImageButton
+        android:id="@id/button_disconnect"
+        android:background="@drawable/disconnect"
+        android:contentDescription="@string/disconnect_call"
+        android:layout_marginRight="16dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"/>
+
+    <!-- TODO(kjellander): Add audio and video mute buttons. -->
+
+<!--         android:background="@android:drawable/ic_menu_camera"
+ -->
+    <ImageButton
+        android:id="@id/button_switch_camera"
+ 		android:background="@drawable/local_camera_icon"
+        android:contentDescription="@string/switch_camera"
+        android:layout_marginRight="8dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"/>
+
+       <ImageButton
+        android:id="@id/button_screen_mode_id"
+        android:background="@drawable/screen_mode_icon"
+        android:contentDescription="@string/disconnect_call"
+        android:layout_marginRight="8dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"/> 
+        <ImageButton
+        android:id="@id/button_speaker_id"
+        android:background="@drawable/speaker"
+        android:contentDescription="@string/disconnect_call"
+        android:layout_marginRight="8dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"/> 
+<!--      <ImageButton
+        android:id="@id/button_toggle_debug"
+        android:background="@android:drawable/ic_menu_info_details"
+        android:contentDescription="@string/disconnect_call"
+        android:layout_marginRight="8dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"/>  -->
+<!--     <ImageButton
+        android:id="@id/button_scaling_mode"
+        android:background="@drawable/ic_action_return_from_full_screen"
+        android:contentDescription="@string/disconnect_call"
+        android:layout_width="48dp"
+        android:layout_height="48dp"/> -->
+
+</LinearLayout>

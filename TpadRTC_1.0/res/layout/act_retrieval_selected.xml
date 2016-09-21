@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/scanning_layout_BG_STYLE" >
+
+    <include
+        android:id="@+id/include_scanning_title"
+        style="@style/scanning_title_include_STYLE"
+        layout="@layout/part_scanning_layout_title" />
+    
+    <include
+        android:id="@+id/include_scanning_buttons"
+        style="@style/scanning_buttons_include_STYLE"
+        layout="@layout/part_confirm_buttons" />
+
+    <ListView
+        android:id="@+id/list_search_scan_list"
+        style="@style/scanning_listview_STYLE"
+        android:layout_above="@id/include_scanning_buttons"
+        android:layout_below="@id/include_scanning_title" />
+
+</RelativeLayout>

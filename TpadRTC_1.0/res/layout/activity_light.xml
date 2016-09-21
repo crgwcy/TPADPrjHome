@@ -1,0 +1,208 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3f3a39"
+    android:orientation="vertical"
+    tools:context=".LightActivity"
+     >
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	     >
+
+    <ImageButton
+        android:id="@id/light_ret_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/set_ret_btn" >
+    </ImageButton>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:text="@string/light_tittle"
+        android:textColor="#ffffff"
+        android:textSize="25sp" />
+</LinearLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:orientation="horizontal" >
+    <TextView
+        android:id="@id/light_name_label_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/light_name"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />    
+     <ImageButton
+        android:id="@id/light_home_btn_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentRight="true"
+			
+        android:background="@android:color/transparent"
+        android:src="@drawable/light_all_btn" >
+    </ImageButton>      
+
+</RelativeLayout>
+
+<com.tpad.myViews.DrawView
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_marginLeft="0dp"
+    android:layout_marginRight="0dp"
+    
+    android:layout_marginTop="10dp"
+    android:background="@drawable/home_light_color" 
+    android:layout_weight="1"/>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="60dp"
+    android:layout_marginBottom="60dp"  
+    android:layout_gravity="center"
+    android:scaleX="1.6"
+    android:scaleY="1.6"
+    android:background="@android:color/transparent"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="horizontal" >
+
+    <ImageButton
+        android:id="@id/night_light_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/night_light_btn_selector" >
+    </ImageButton>
+
+    <ImageButton
+        android:id="@id/memory_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/connect_btn_selector" >
+    </ImageButton>
+    
+<!--     <ImageButton
+            android:id="@id/spot_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/light_spot_off_btn_org" >
+        </ImageButton> -->
+    
+    <ImageButton
+        android:id="@id/on_off_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"   
+        android:background="@drawable/light_off_btn_org" >
+    </ImageButton>
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="6dp"
+    android:layout_marginBottom="10dp"
+    
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@id/light_slide_weak_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:paddingLeft="60dp"
+        android:src="@drawable/ic_linear_display_spot_weak" />
+    <!--
+        max=100,代表它的取值范围是0-100,共101个值;
+        progress=20,代表默认值是20
+        progressDrawable,表示SeekBar的背景图片
+        thumbe,表示SeekBar的滑块图片  
+
+    --><SeekBar
+            android:id="@+id/seekbar_self"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="15"
+            android:max="100"
+            android:maxHeight="3dp"
+            android:minHeight="3dp"
+            android:progress="20"
+            android:progressDrawable="@drawable/progress_brightness_gradient"
+            android:thumb="@drawable/thumb_bar" />
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:paddingRight="10dp"
+            android:src="@drawable/ic_linear_display_spot_strong" />
+
+</LinearLayout>
+
+<!-- <TextView
+        android:id="@id/light_name_label_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+	    android:layout_marginLeft="40dp"
+        android:layout_marginBottom="3dp"
+        android:text="@string/scene"
+        android:textColor="#ffffff"
+        android:textSize="10sp" /> -->
+
+<!-- <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="horizontal"
+    android:layout_marginBottom="30dp" >
+
+    <ImageButton
+        android:id="@id/scene1_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/scene1" >
+    </ImageButton>
+
+    <ImageButton
+        android:id="@id/scene2_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/scene2" >
+    </ImageButton>
+
+    <ImageButton
+        android:id="@id/scene3_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"       
+        android:background="@drawable/scene3" >
+    </ImageButton>
+    <ImageButton
+            android:id="@id/scene4_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/scene4" >
+        </ImageButton>
+
+</LinearLayout> -->
+
+</LinearLayout>

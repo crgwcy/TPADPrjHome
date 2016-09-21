@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff0000"
+    android:orientation="vertical" >
+
+	<TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingTop="20dp"
+	    android:paddingBottom="20dp"
+	    
+	    android:text="ALERT"
+	    android:textColor="#ffff00"
+	    android:background="#ff0000"
+	    
+	    android:textSize="28sp"
+	    android:gravity="center"/>
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_marginTop="20dp"
+	    android:layout_weight="1"
+	    android:background="#ff0000"
+	    android:orientation="vertical"
+	    >	
+   		<TextView 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="SENSOR ALERT"
+    android:textColor="#ffffff"
+    android:textSize="35sp"
+    android:layout_marginTop="10dp"
+    android:gravity="center"/>
+	  <ImageView 
+	      android:id="@id/alarm_flashing_icon_id"
+	      android:layout_width="match_parent"
+	      android:layout_height="0dp"
+	      android:src="@drawable/alert_icon"
+	      android:paddingTop="30dp"
+	      android:layout_weight="1"   
+	      android:layout_gravity="center_vertical|center_horizontal"
+	      />
+
+	</LinearLayout>
+	<Button 
+	    android:id="@id/alarm_ok_btn_id"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="right"
+	    android:text="O K"
+	    android:textSize="40sp"
+	    android:textColor="#ffffd0"
+	    android:background="#ff2000"
+	    android:paddingLeft="20dp"
+	    android:paddingRight="20dp"	    
+	    android:paddingTop="20dp"
+	    android:paddingBottom="20dp"/>
+<!-- 	<FrameLayout 
+	   android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    >
+	<Gallery 
+	    android:id="@id/camera_gallery_id"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_marginBottom="60dp"
+	    android:unselectedAlpha="0.2"	    
+	    android:layout_gravity="center_vertical"
+	    />
+ 	<TextView
+	    android:id="@id/camera_gallery_label_id" 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="name"
+	    android:textSize="28sp"    
+	    android:gravity="center"
+	    android:layout_gravity="bottom"
+	    android:layout_marginBottom="50dp"
+	    />	 
+     <LinearLayout  
+           android:id="@+id/camera_domsViewGroup_id"  
+           android:layout_width="fill_parent"  
+           android:layout_height="wrap_content"  
+	   	   android:layout_gravity="bottom"
+           android:layout_marginBottom="30dp"  
+           android:gravity="center_horizontal"  
+           android:orientation="horizontal" >  
+     </LinearLayout>  	    
+	</FrameLayout>   --> 
+</LinearLayout>

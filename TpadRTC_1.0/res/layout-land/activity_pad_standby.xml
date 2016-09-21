@@ -1,0 +1,264 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/pad_main_menu_layout_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_menu_bg_color"
+    android:orientation="horizontal" >
+    
+    <LinearLayout
+        android:id="@id/home_stus_view_bg_id"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="5"
+        android:background="@color/main_menu_bg_color"
+        android:orientation="vertical" 
+        >
+         
+         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:gravity="center_horizontal"
+            android:text="HOME"
+            android:textSize="36sp"           
+            android:textStyle="bold" 
+         />     
+             
+          <TextView
+            android:id="@id/date_text_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            
+            android:layout_gravity="center_horizontal"
+            android:text="sss"
+            android:textSize="25sp" 
+         />  
+         
+          <TextView
+            android:id="@id/time_text_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"        
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="0dp"
+            android:text=""         
+            android:textScaleX="1.5"
+            android:textSize="50sp"
+            android:textStyle="normal"
+            android:typeface="serif" 
+          />   
+
+        <ImageView
+            android:id="@id/home_image_id"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:src="@drawable/at_home_status_icon" 
+        />
+        <TextView
+            android:id="@id/home_stus_text_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="10dp" 
+ 			android:paddingBottom="30dp"           
+            android:text="AT HOME"
+            android:textSize="20sp"
+            android:textStyle="bold" 
+        />
+
+    </LinearLayout>
+    
+	<View
+       android:layout_width="1dp"
+       android:layout_height="fill_parent"
+       android:layout_weight="0"
+       android:background="#cfcfcf" 
+      />       
+       
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        android:background="@color/main_menu_bg_color" >
+
+        <LinearLayout
+         android:layout_width="fill_parent"
+         android:layout_height="0dp"
+         android:layout_weight="0.5"
+         android:background="@color/main_menu_bg_color" 
+         android:orientation="horizontal">
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="fill_parent"
+			 android:text="MENU"
+			 android:gravity="center"
+			 android:layout_marginLeft="10dp"
+             />
+<!--          <Button
+            android:id="@+id/alarm_test_id"
+             android:layout_width="wrap_content"
+             android:layout_height="fill_parent"
+			 android:text="ALARM TEST"
+			 android:textSize="15sp"
+			 android:gravity="center"		 
+			 android:textColor="@android:color/holo_red_light"
+			 android:background="@android:color/transparent"
+			 android:layout_marginLeft="50dp"
+             />  -->
+         <ImageButton 
+            android:id="@+id/usr_set_btn_id"
+            android:src="@drawable/hik_camera_set"            
+            android:background="@android:color/transparent"
+        	android:layout_width="fill_parent"
+        	android:layout_height="fill_parent"   
+        	android:layout_marginLeft="80dp"
+        	android:contentDescription="@string/disconnect_call">   
+        </ImageButton>
+        </LinearLayout>
+        
+        
+	      <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_weight="0"
+            android:background="#cfcfcf" 
+	            />                      
+         <LinearLayout
+            android:id="@id/pad_light_btn_id"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/main_menu_bg_color"
+            android:orientation="horizontal"
+            android:paddingTop="5dp" 
+            android:paddingBottom="5dp">
+         <ImageView 
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:src="@drawable/light_icon"
+             android:layout_marginLeft="20dp"       
+             android:layout_gravity="center_vertical"
+             />
+         <TextView 
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+			 android:text="LIGHT"
+			 android:textSize="16sp"
+			 android:gravity="center"
+			 android:layout_gravity="right"
+             />            
+        </LinearLayout>
+        
+ 	      <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_weight="0"
+            android:background="#cfcfcf" 
+	      />                 
+          <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/main_menu_bg_color"
+            android:orientation="horizontal"
+            android:id="@id/community_btn_id"
+            android:paddingTop="5dp" 
+            android:paddingBottom="5dp"
+              >
+         <ImageView 
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:src="@drawable/human_icon"
+             android:layout_gravity="center_vertical"
+             android:layout_marginLeft="20dp"
+             
+             android:contentDescription="@string/app_name"
+             />
+         <TextView 
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+			 android:text="COMMUNITY"
+			 android:textSize="16sp"
+			 android:gravity="center"
+			 android:layout_gravity="right"
+             />         
+        </LinearLayout>
+        
+          
+	      <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_weight="0"
+            android:background="#cfcfcf" 
+	            />
+	      
+	      <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/main_menu_bg_color"
+            android:orientation="horizontal"
+            android:id="@id/camera_btn_id"
+            
+            android:paddingTop="5dp" 
+            android:paddingBottom="5dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/camera_icon"
+                android:layout_marginLeft="20dp"
+                
+                android:layout_gravity="center_vertical" 
+                />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="right"
+                android:gravity="center"
+                android:text="CAMERA"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+	      <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_weight="0"
+            android:background="#cfcfcf" 
+	            />            
+         <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/main_menu_bg_color"
+            android:orientation="horizontal"
+            android:paddingTop="5dp" 
+            android:paddingBottom="5dp"
+            android:id="@id/log_btn_id" >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/log_icon"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center_vertical"
+                 />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="right"
+                android:gravity="center"
+                android:text="LOG"
+                android:textSize="16sp" />            
+             
+        </LinearLayout>                             
+	</LinearLayout>
+</LinearLayout>
+

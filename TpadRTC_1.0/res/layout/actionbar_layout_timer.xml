@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/module_actionbar_padding_left"
+    android:paddingRight="@dimen/module_actionbar_padding_right" >
+
+    <ImageButton
+        android:id="@+id/actionbar_timer_return"
+        android:layout_width="@dimen/action_bar_img_return_width"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_module_return_back" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_menu_timer_enabled" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true" >
+
+        <ImageButton
+            android:id="@+id/actionbar_timer_add"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_timer_preview_add" />
+
+        <ImageButton
+            android:id="@+id/actionbar_timer_del"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_timer_edit_del" />
+    </FrameLayout>
+
+</RelativeLayout>

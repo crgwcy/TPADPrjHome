@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+        <ImageView 
+            android:id="@+id/ic_dialog_save_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_dialog_save_scene_txt"/>
+
+        <LinearLayout
+                android:id="@+id/layout_dialog_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:background="@drawable/ic_dialog_save_scene_bg"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dialog_buttons_center_margin_top"
+                android:orientation="vertical">
+
+            <ImageView 
+                android:id="@+id/ic_dialog_save_scene_img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_dialog_save_scene_img"/>
+            
+            <TextView 
+                android:id="@+id/ic_dialog_save_memory_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/timer_item_font_color_online"
+                android:textSize="@dimen/dialog_edit_font_size"
+                android:text="ODELIC"/>
+
+            <ImageView android:id="@+id/img_save_scene_id"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="20dp"
+                       android:src="@drawable/ic_dialog_save_scene_1"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

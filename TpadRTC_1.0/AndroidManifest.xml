@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.RTC.TpadRTC"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <!-- "fr.pchab.AndroidRTC" -->
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    
+    <!--the glEs maybe not fit outdoor pad  -->
+    <uses-feature android:glEsVersion="0x00020000" android:required="true" />
+    
+    <uses-sdk
+        android:minSdkVersion="13"
+        android:targetSdkVersion="21" />
+
+    <!-- new add at date 2015.12.20  for out door pad settinga -->
+    
+    
+     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+   	<uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+   	<uses-permission android:name="android.permission.CONNECTIVITY_INTERNAL"/>
+    
+    <!-- <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/> -->
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+ <!--    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> -->
+    
+
+    <!-- blue tooth module -->
+    <permission android:name="jp.co.odelic.smt.remote03.BLUETOOTH_BROADCAST" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="jp.co.odelic.smt.remote03.BLUETOOTH_BROADCAST" />
+
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+
+        <!-- ________________BLUE TOOTH MODULE______________ -->
+        <!-- _______________  Service  ______________ -->
+
+        <service android:name="jp.co.odelic.smt.remote03.serv.LightService" />
+        <!--
+         Welcome Act
+         <activity
+            android:name="jp.co.odelic.smt.remote03.act.module.WelcomeAct"
+        -->
+
+
+        <!-- Welcome Act -->
+
+        <activity
+            android:name="jp.co.odelic.smt.remote03.act.module.WelcomeAct"
+            android:screenOrientation="landscape"
+            android:theme="@style/NoBarTheme" >
+
+            <!--
+                 <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+
+        <!-- Main Controller -->
+
+        <activity
+            android:name="jp.co.odelic.smt.remote03.act.module.MainController"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:theme="@style/NoBarTheme" />
+
+        <!-- Module Retrieval -->
+
+        <activity
+            android:name="jp.co.odelic.smt.remote03.act.module.RetrievalDeviceAct"
+            android:screenOrientation="landscape"
+            android:theme="@style/ModuleActTheme" />
+        <activity
+            android:name="jp.co.odelic.smt.remote03.act.module.RetrievalSelectedAct"
+            android:screenOrientation="landscape"
+            android:theme="@style/ModuleActTheme" />
+
+        <!-- Module Timer -->
+
+        <activity
+            android:name="jp.co.odelic.smt.remote03.act.module.TimerSettingAct"
+            android:screenOrientation="landscape"
+            android:theme="@style/ModuleActTheme" />
+        <activity
+            android:name="jp.co.odelic.smt.remote03.act.module.TimerEditorAct"
+            android:screenOrientation="landscape"
+            android:theme="@style/ModuleActTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <!-- Module Display -->
+
+        <activity
+            android:name="jp.co.odelic.smt.remote03.act.module.ThemeDisplayAct"
+            android:screenOrientation="landscape"
+            android:theme="@style/ModuleActTheme" />
+
+        <!-- Module Light -->
+
+        <activity
+            android:name="jp.co.odelic.smt.remote03.act.module.LightSettingAct"
+            android:screenOrientation="landscape"
+            android:theme="@style/ModuleActTheme" />
+
+        <!-- Module Infor -->
+        <activity
+            android:name="jp.co.odelic.smt.remote03.act.module.InforUpdateAct"
+            android:screenOrientation="landscape"
+            android:theme="@style/ModuleActTheme" />
+        <activity
+            android:name="com.tpad.activitys.LoginActivity"
+            android:label="@string/app_name" >
+
+            <!--
+                 <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <!--
+            <activity
+            android:name="fr.pchab.AndroidRTC.RTCActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="@string/host"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        -->
+
+
+        <!-- MyRTCActivity -->
+
+        <activity
+            android:name="com.RTC.TpadRTC.MyRTCActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="fullUser" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="@string/host"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tpad.activitys.MainMenuActivity"
+            android:label="@string/title_activity_main_menu" >
+        </activity>
+        <activity
+            android:name="com.tpad.activitys.CommunityActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_community" >
+        </activity>
+
+        <service android:name="com.mywebrtc.util.WSClientService" />
+
+        <activity
+            android:name="com.tpad.activitys.RingActivity"
+            android:label="@string/title_activity_ring" >
+        </activity>
+        <activity
+            android:name="com.tpad.activitys.CallActivity"
+            android:label="@string/title_activity_call" >
+        </activity>
+        <activity
+            android:name="com.tpad.pad.activitys.PadStandbyActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tpad.pad.activitys.PadCommunityActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_pad_standby"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.tpad.activitys.LightActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_pad_standby"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.tpad.pad.activitys.PadLightActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_pad_light"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.tpad.pad.activitys.HikCameraActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_ip_camera"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.tpad.activitys.CameraListActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_ip_camera"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.tpad.pad.activitys.LocalIpCameraActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_ip_camera"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.tpad.activitys.AlarmActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_alarm_activity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+
+        <!--
+             <activity
+            android:name="com.tpad.hik.MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_pad_standby"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+        </activity>
+        -->
+        <!--
+       	<receiver
+	    	android:name="fr.pchab.AndroidRTC.BootReceiver">
+		    <intent-filter >
+		        <action android:name="android.intent.action.BOOT_COMPLETED"/>
+		    </intent-filter>
+		</receiver>
+        -->
+        <activity
+            android:name="com.tpad.activitys.TestMjpegActivity"
+            android:label="@string/title_activity_test_mjpeg" >
+        </activity>
+        <activity
+            android:name="com.RTC.TpadRTC.SettingsActivity"
+            android:label="SETTINGS ACTIVITY"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            >
+        </activity>
+    </application>
+
+</manifest>
